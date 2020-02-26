@@ -1,6 +1,7 @@
 ---
 - name: test
-  hosts: localhost
+  hosts: 127.0.0.1
+  connection: local
   tasks: 
     - name: "create the new key"
       ec2_key:
