@@ -6,20 +6,14 @@
     - name: " aws create the new key"
       ec2_key:
          name: abc_tower
-<<<<<<< HEAD
-=======
          region: us-east-1
->>>>>>> 897de9c58794e78a788e85a686ad76d92a6c30cc
     - name: "Launch ec2 instance"
       ec2: 
          instance_type: t2.micro
          key_name: abc_tower
          image: ami-123456
          count: 1
-         group: aws
-         vpc_subnet_id: 
+         group: launch-wizard-5
+         vpc_subnet_id:  vpc-af0566d5
          assign_public_ip: yes
-<<<<<<< HEAD
-=======
          region: us-east-1
->>>>>>> 897de9c58794e78a788e85a686ad76d92a6c30cc
