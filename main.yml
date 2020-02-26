@@ -5,8 +5,9 @@
   tasks: 
     - name: " aws create the new key"
       ec2_key:
-         name: abc_tower
+         name: abcd_tower
          region: us-east-1
+      register: ec2_key 
     - name: "Launch ec2 instance"
       ec2: 
          instance_type: t2.micro
@@ -17,3 +18,4 @@
          vpc_subnet_id:  subnet-37bded6b
          assign_public_ip: yes
          region: us-east-1
+      register: ec2
