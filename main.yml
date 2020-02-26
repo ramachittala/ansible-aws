@@ -11,7 +11,7 @@
     - name: "Launch ec2 instance"
       ec2: 
          instance_type: t2.micro
-         key_name: abc_tower
+         key_name: abcd_tower
          image: ami-07ebfd5b3428b6f4d
          count: 1
          group: launch-wizard-7
