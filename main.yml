@@ -11,7 +11,7 @@
       ec2: 
          instance_type: t2.micro
          key_name: abc_tower
-         image: ami-123456
+         image: ami-07ebfd5b3428b6f4d
          count: 1
          group: launch-wizard-7
          vpc_subnet_id:  subnet-37bded6b
