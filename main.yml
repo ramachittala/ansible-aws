@@ -3,9 +3,10 @@
   hosts: 127.0.0.1
   connection: local
   tasks: 
-    - name: " awscreate the new key"
+    - name: " aws create the new key"
       ec2_key:
          name: abc_tower
+         region: us-east-1
     - name: "Launch ec2 instance"
       ec2: 
          instance_type: t2.micro
@@ -15,3 +16,4 @@
          group: aws
          vpc_subnet_id: 
          assign_public_ip: yes
+         region: us-east-1
